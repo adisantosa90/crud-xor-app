@@ -1,0 +1,36 @@
+1. Persiapan Sistem
+Pastikan Anda memiliki XAMPP
+Pastikan PHP versi 7.4 atau lebih baru
+Pastikan MySQL berjalan
+
+2. Setup Database
+Buka phpMyAdmin atau alat manajemen database lainnya
+Buat database baru dengan nama crud_xor_db
+Import file database_dump.sql ke database yang baru dibuat
+
+3. Konfigurasi Aplikasi
+Letakkan semua file aplikasi di folder htdocs (XAMPP) atau folder web server Anda
+Edit file config/database.php dan sesuaikan kredensial database
+
+4. Menjalankan Aplikasi
+Start Apache dan MySQL di XAMPP
+Buka browser dan akses: http://localhost/crud-xor-app
+Aplikasi siap digunakan!
+
+5. Fitur Aplikasi
+Home: Halaman utama dengan penjelasan aplikasi
+Tambah Data: Form untuk menambahkan data pengguna baru
+Lihat Data: Tabel yang menampilkan semua data pengguna (data didekripsi)
+Edit: Form untuk mengubah data pengguna
+Hapus: Fungsi untuk menghapus data pengguna
+
+6. Keamanan
+Data sensitif (email, telepon, alamat) dienkripsi menggunakan algoritma XOR
+Kunci enkripsi dapat diubah di file includes/functions.php
+Data yang ditampilkan di browser sudah didekripsi
+
+Catatan Penting
+Aplikasi ini menggunakan enkripsi XOR yang merupakan enkripsi sederhana
+Untuk keperluan produksi, disarankan menggunakan algoritma enkripsi yang lebih kuat seperti AES
+Pastikan kunci enkripsi disimpan dengan aman dan tidak di-hardcode dalam aplikasi
+Aplikasi siap digunakan! Anda dapat menambahkan, melihat, mengedit, dan menghapus data pengguna dengan enkripsi XOR pada data sensitif.
